@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.joanerocha.vacinei.CadastroPaciente">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastro de Paciente"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_column="21"
+                android:src="@drawable/logo" />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/nomePaciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/sus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="SUS"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/emailPaciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idade"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/gen_btn"
+        android:layout_width="@dimen/bt_largura"
+        android:layout_height="@dimen/bt_altura"
+        android:layout_gravity="center_horizontal"
+        android:onClick="TelaGerarQR"
+        android:text="Cadastrar"
+        android:textSize="15dp" />
+    <!--<Button
+        android:layout_width="@dimen/bt_largura"
+        android:layout_height="@dimen/bt_altura"
+        android:text="Cadastro"
+        android:id="@+id/bt_etapa2"
+        android:onClick="alertaCadastroPaciente"
+        android:layout_gravity="center_horizontal" /> -->
+</LinearLayout>

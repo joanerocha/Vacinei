@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.joanerocha.vacinei.CadastroEnfermeiro">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:stretchColumns="0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Cadastro Enfermeiro"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_column="21"
+                android:src="@drawable/iconmedico" />
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/coren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="COREN"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/csenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bt_cadastrar"
+        android:layout_width="@dimen/bt_largura"
+        android:layout_height="@dimen/bt_altura"
+        android:layout_gravity="center_horizontal"
+        android:onClick="alertaCadastroEnfermeiro"
+        android:text="Cadastrar" />
+</LinearLayout>
+
+
